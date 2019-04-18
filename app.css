@@ -70,7 +70,7 @@ input, textarea, select {
 }
 /* Mixins are v useful for media queries. we can keep all the body styles at different screenwidths in one place */
 body {
-  background-color: #ca774a;
+  background-color: #f70201;
   min-height: 100vh;
   color: #ffffff;
   font-family: "Jost";
