@@ -1,0 +1,22 @@
+{
+  "name": "tropicali",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ronald-Crosby/Tropicali.git"
+  },
+  "author": "Ronald Crosby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ronald-Crosby/Tropicali/issues"
+  },
+  "homepage": "https://github.com/Ronald-Crosby/Tropicali#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
