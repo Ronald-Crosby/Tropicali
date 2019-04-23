@@ -9,6 +9,8 @@ var imagemin = require("gulp-imagemin")
 
 sass.compiler = require("node-sass")
 
+var ghpages = require("gh-pages")
+
 // sass
 gulp.task("sass", function() {
   // we want to run something to watch our app.scss and copy those changes to app.css as we did in the command line earlier
@@ -61,6 +63,12 @@ gulp.task("watch", function() {
     gulp.watch("src/ css/app.scss", ["sass"])
     gulp.watch("src/fonts/*", ["fonts"])
     gulp.watch("src/img/*", ["images"])
+})
+
+// gh pages auto deploys to github when we save
+
+gulp.task("deploy", function() {
+  ghpages.publish("dist")
 })
 
 // run on load/default
