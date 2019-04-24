@@ -20,7 +20,6 @@ Heading 1: 96px Bagnard
 Heading 2: 64px Bagnard
 Heading 3: 32px Bagnard
 
-
 Content –
 Say hello
 

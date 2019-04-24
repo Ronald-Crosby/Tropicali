@@ -1,0 +1,127 @@
+@custom-media --mq-medium (max-width: 800px);
+@custom-media --mq-small (max-width: 550px);
+
+:root {
+    --Red: #f70201;
+    --Brown: #ca774a;
+    --White: #ffffff;
+    --Black: #151620;
+
+    /* pagination/spacing variables */
+    --main-spacing: 64px;
+    --gap-spacing: 40px;
+    --header-height: 80px;
+    --hero-spacing: 240px;
+    --centered-width: 50%;
+}
+
+@media (--mq-medium) {
+    :root {
+        --main-spacing: 40px;
+        --gap-spacing: 32px;
+        --hero-spacing: 120px;
+        --centered-width: 75%;
+    }    
+}
+
+@media (--mq-small) {
+    :root {
+        --main-spacing: 28px;
+        --hero-spacing: 100px;
+    }
+}
+
+body {
+    background-color: var(--White);
+}
+
+header {
+    background-color: var(--Red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: var(--header-height);
+    padding: 0 var(--main-spacing);
+}
+
+header a {
+    color: var(--White);
+}
+
+section.grid, section.centered {
+    margin: var(--main-spacing);
+}
+
+section.hero {
+    padding: var(--hero-spacing) var(--main-spacing);
+    background-color: #eee;
+    color: var(--White);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);    
+    text-align: center;
+
+    background-image: image-set("img/rainbow.jpg" 1x, "img/rainbow@2x.jpg" 2x);
+    background-size: cover;
+    background-position: center;
+}
+
+section.hero.menu {
+    background-image: image-set("img/green-wall.jpg" 1x, "img/green-wall@2x.jpg" 2x);
+}
+
+section.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--gap-spacing);
+    align-items: center;    
+    text-align: center;
+}
+
+section.grid .about-copy {
+    text-align: left;
+}
+
+section.grid p {
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    color: var(--White);
+    border: 1px solid var(--White);    
+    padding: 15px 30px;
+}
+
+.button-full {
+    background-color: var(--Red);
+}
+
+section.centered {
+    text-align: center;
+    width: var(--centered-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (--mq-small) {
+    header img {
+        width: 160px;
+    }
+
+    section.grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button {
+        padding: 5px 10px;
+    }
+
+    .hero .button {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
